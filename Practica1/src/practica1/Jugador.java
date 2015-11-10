@@ -11,9 +11,12 @@ public class Jugador extends Personas{
     private Boolean titular;
     private int num;
 
-    public Jugador(int id, String nombre, String posicion) {
+    public Jugador(int id, String nombre, int salario, String posicion, Boolean titular, int num) {
         super(id, nombre);
+        this.salario = salario;
         this.posicion = posicion;
+        this.titular = titular;
+        this.num = num;
     }
     
     

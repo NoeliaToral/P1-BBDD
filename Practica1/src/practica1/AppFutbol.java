@@ -2,6 +2,7 @@ package practica1;
 
 import java.util.Map;
 import java.util.Collection;
+import java.util.Scanner;
 /**
  *
  * @author Emilio y Noelia
@@ -13,19 +14,39 @@ public class AppFutbol {
     private Map<Integer, Arbitro> lArbitros ; // ..igual
     private Map<Integer, Estadio> lEstadios ; //..igual
     private Collection<Partido> lpartidos;
-
+    Scanner scanf = new Scanner(System.in);
     public AppFutbol() {
     }
-    
+   /* 
     public Equipo altaEquipo(){
         
     }
     public boolean bajaEquipo(){
         
-    }
+    }*/
     public Jugador altaJugador(){
+        int id, salario, num;
+        String nombre;
+        String posicion;
+        boolean titular;
+        System.out.println("Id: ");
+        id = scanf.nextInt();
+        System.out.println("Nombre: ");
+        nombre = scanf.nextLine();
+        System.out.println("Num: ");
+        num = scanf.nextInt();
+        System.out.println("Posicion: ");
+        posicion = scanf.nextLine();
+        System.out.println("Salario: ");
+        salario = scanf.nextInt();
+        System.out.println("Titular[S/N]: ");
+        titular = scanf.nextBoolean();
         
+        Jugador j = new Jugador(id, nombre, salario, posicion, titular, num);
+        
+        return j;
     }
+    /*
     public boolean bajaJugador(){
         
     }
@@ -82,4 +103,5 @@ public class AppFutbol {
     public void CalcularPosicionesEquipos(lequipos){
         
     }
+    */
 }   

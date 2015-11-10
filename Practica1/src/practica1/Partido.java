@@ -8,7 +8,7 @@ public class Partido {
     
     private int idpartido;
     private Estadio e;
-    private Fecha X;
+    //private Fecha X;
     private Equipo eq1;
     private Equipo eq2;
     private Boolean ida;
