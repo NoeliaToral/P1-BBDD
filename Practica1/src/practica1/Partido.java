@@ -1,26 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package practica1;
-import java.util.*;
+import java.util.Collection;
 /**
  *
- * @author Noelia
+ * @author Emilio y Noelia
  */
 public class Partido {
     
-    int idpartido;
-    Estadio e;
-    //Fecha;
-    Equipo eq1;
-    Equipo eq2;
-    Boolean ida;
-    //ArrayList (<Arbitro>) larbitros;
-    //Collection (<Jugador>) leq1;
-    //Collection (<Jugador>) leq2;
-    int golesA;
-    int golesB;
+    private int idpartido;
+    private Estadio e;
+    private Fecha X;
+    private Equipo eq1;
+    private Equipo eq2;
+    private Boolean ida;
+    private Collection<Arbitro> larbitros;
+    private Collection<Jugador> leq1;
+    private Collection<Jugador> leq2;
+    private int golesA;
+    private int golesB;
+    
+    public Partido(){
+        
+    }
     
 }

@@ -1,20 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package practica1;
 
 /**
  *
- * @author Noelia
+ * @author Emilio y Noelia
  */
 public class Arbitro extends Personas {
     
-    public String tipo;
+    private String tipo;
 
-    public Arbitro(String tipo, int id, String nombre, String email, String Tlf) {
-        super(id, nombre, email, Tlf);
+    public Arbitro(int id, String nombre, String tipo) {
+        super(id, nombre);
         this.tipo = tipo;
     }
 
